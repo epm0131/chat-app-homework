@@ -6,7 +6,7 @@
   window.chat.listenForMessages(function messageHandler(data) {
     console.log(data);
     $('.messages')
-      .append('<p>' + data.message + '</p>')
+      .append('<p>' + data.username + ': ' + data.message + '</p>')
   });
 
 
